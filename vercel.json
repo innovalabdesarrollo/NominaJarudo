@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm --filter @nomina-jarudo/web build",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- ./apps/web ./apps/api ./pnpm-lock.yaml ./package.json ./vercel.json ./apps/web/vercel.json"
+}

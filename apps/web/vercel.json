@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "sveltekit",
+  "installCommand": "cd ../.. && pnpm install",
+  "buildCommand": "pnpm build",
+  "functions": {
+    "api/[...path].js": {
+      "maxDuration": 60,
+      "includeFiles": "../api/**"
+    }
+  }
+}

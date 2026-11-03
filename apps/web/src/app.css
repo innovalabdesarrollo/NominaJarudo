@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+:root {
+  --brand: #0f4c3a;
+  --brand-soft: #e7f2ee;
+  --accent: #c45c26;
+}
+
+body {
+  font-family: 'Segoe UI', ui-sans-serif, system-ui, sans-serif;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "nomina-jarudo",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=24.22.1"
+  },
+  "scripts": {
+    "dev": "CHOKIDAR_USEPOLLING=1 pnpm -r --parallel run dev",
+    "dev:api": "pnpm --filter @nomina-jarudo/api dev",
+    "dev:web": "CHOKIDAR_USEPOLLING=1 pnpm --filter @nomina-jarudo/web dev",
+    "seed": "pnpm --filter @nomina-jarudo/api seed",
+    "build": "pnpm -r run build",
+    "start": "pnpm -r --parallel run start",
+    "test": "pnpm --filter @nomina-jarudo/api test",
+    "test:e2e": "playwright test",
+    "audit:deps": "pnpm audit --audit-level=high"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
+  }
+}

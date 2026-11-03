@@ -1,0 +1,14 @@
+node_modules
+.svelte-kit
+build
+dist
+.env
+uploads
+*.log
+.DS_Store
+.vercel
+test-results
+playwright-report
+blob-report
+apps/web/.env
+apps/web/.vercel
